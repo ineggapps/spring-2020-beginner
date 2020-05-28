@@ -19,6 +19,5 @@
 	
 	<!-- scope: prototype 호출될 때마다 새로운 객체를 생성하여 반환한다. -->
 	<bean id="music" class="com.user6.Music" scope="prototype"/>
-	 		
 
 </beans>  

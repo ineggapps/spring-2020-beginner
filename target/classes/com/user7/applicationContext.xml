@@ -14,10 +14,20 @@
 			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 	        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-	<!-- scope 기본값: singleton 호출될 때마다 동일한 객체가 반환한다. -->
-	<bean id="movie" class="com.user6.Movie" />
+	<bean id="movie" class="com.user7.Movie" scope="prototype"/>
+	<bean id="music" class="com.user7.Music" scope="prototype">
+<!-- 
+		<aop:scoped-proxy/>
+		해당 객체의 메서드를 접근할 때마다 새로운 객체를 생성하여 반환하도록 설정
+ -->
+ 		
+ 	</bean>
 	
-	<!-- scope: prototype 호출될 때마다 새로운 객체를 생성하여 반환한다. -->
-	<bean id="music" class="com.user6.Music" scope="prototype"/>
+	<bean id="bean" class="com.user7.UserBean">
+		<!-- 객체를 1번밖에 호출하지 않았다. -->
+		<property name="movie" ref="movie"/>
+		<property name="music" ref="music"/>
+	</bean>
 
+		
 </beans>  

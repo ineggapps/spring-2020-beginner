@@ -23,7 +23,7 @@
 
 ## 프로토타입(Prototype)
 
-- 스프링에서 scope를 prototype을 지정한 경우 객체를 요청할 때마다 생성하여 반환한다.
+- 객체를 컨테이너에서 호출할 때마다 객체를 생성하여 반환한다.
 
 > App.class
 
@@ -37,4 +37,17 @@
 
 ```xml
 	<bean id="music" class="com.user6.Music" scope="prototype"/>
+```
+
+### <aop:scoped-proxy>
+
+- 참고로 자주 사용하는 옵션은 아니다.
+- beans의 네임스페이스: [xmlns:aop="http://www.springframework.org/schema/aop"](http://www.springframework.org/schema/aop")
+- 해당 객체의 메서드를 접근할 떄마다 새로운 객체를 생성하는 옵션이다.
+- 다음과 같이 선언하면 된다.
+
+```xml
+	<bean id="music" class="com.user7.Music" scope="prototype">
+		<aop:scoped-proxy/>
+ 	</bean>
 ```
