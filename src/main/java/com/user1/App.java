@@ -6,7 +6,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class App {
 	public static void main(String[] args) {
 		//생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)
-		//스프링 컨테이너에 생성하는 구문
+		//스프링 컨테이너를 생성하는 구문
 		AbstractApplicationContext context = new GenericXmlApplicationContext("classpath:com/user1/applicationContext.xml");
 		
 		try {
