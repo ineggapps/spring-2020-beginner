@@ -14,7 +14,14 @@
 			http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
 	        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
+	<!-- 태그를 이용한 등록
 	<context:annotation-config />
+	- @Required
+	- @Autowired
+	- @Resource, @PostConstruct, @PreDestroy
+	- @Configuration
+	 -->
+	
 
 	<bean id="userService" class="com.test1.UserServiceImpl">
 		<property name="name" value="필수래요" />
