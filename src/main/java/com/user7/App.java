@@ -3,6 +3,13 @@ package com.user7;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+/*
+ 	객체가 호출될 때마다 매번 새로운 객체를 생성하여 반환받는 방법
+ 	<bean id="music" class="com.user7.Music" scope="prototype">
+		<aop:scoped-proxy/>
+		//해당 객체의 메서드를 접근할 때마다 새로운 객체를 생성하여 반환하도록 설정
+ 	</bean>
+ * */
 public class App {
 	public static void main(String[] args) {
 		// 생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)

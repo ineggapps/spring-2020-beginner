@@ -2,7 +2,12 @@ package com.user3;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
+/*
+ xmlns:p="http://www.springframework.org/schema/p"
+ 네임스페이스 p를 이용하여 객체의 속성 지정하기
+ <bean id="userService" class="com.user3.UserServiceImpl" 
+	  p:name="java" p:tel="010-2222-3333" p:age="33"/>
+ * */
 public class App {
 	public static void main(String[] args) {
 		//생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)
