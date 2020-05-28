@@ -3,6 +3,9 @@ package com.test8;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+/*
+@Component("test8.userServiceImpl")처럼 id값을 다음과 같이 임의로 지정해줄 수도 있다.
+ * */
 public class App {
 	public static void main(String[] args) {
 		//생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)

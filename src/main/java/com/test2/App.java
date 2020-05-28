@@ -3,6 +3,7 @@ package com.test2;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+//UserService의 @Autowired
 public class App {
 	public static void main(String[] args) {
 		//생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)

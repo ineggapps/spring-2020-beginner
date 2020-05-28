@@ -1,8 +1,17 @@
 package com.test10;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
-
+/*
+객체의 Scope 속성을 다음과 같이 지정하는 것은 
+ @Scope(value="prototype", proxyMode=ScopedProxyMode.TARGET_CLASS)
+다음의 xml 선언문과 같은 효과를 낸다.
+<bean ...>
+	<aop:scoped-proxy>
+</bean>
+ */
 public class App {
 	public static void main(String[] args) {
 		// 생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)

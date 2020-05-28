@@ -3,6 +3,10 @@ package com.test5;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+/*
+ @Inject 어노테이션을 이용한 객체 자동 설정
+ 자바 기본 어노테이션이지만 pom.xml에 라이브러리를 추가해 주어야 한다.
+ * */
 public class App {
 	public static void main(String[] args) {
 		//생성하고자 하는 객체를 가지고 있는 것은 xml파일이다. (applicationContext.xml)
