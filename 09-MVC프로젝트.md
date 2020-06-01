@@ -1,13 +1,15 @@
-# MVC
+# MVC 프로젝트 사용하기
 
-## 프로젝트 생성 방법
+- 스프링 MVC 프로젝트에서도 마찬가지로 서블릿이 내부에 존재한다.
+- 이 서블릿을 이용하여 웹 서비스를 제공한다.
 
-- 순서가 바뀌면 안 된다.
-
-1. Spring Legacy Project
-2. 해당 프로젝트 Maven Update
-3. Project Facet에서 Java를 1.8로 Dynamic Web Module을 3.1로 변경한다.
-   - 단, Maven Update 한 뒤에 수행해야 한다.
+1. 웹브라우저가 요청을 Dispatcher 서블릿에 전송
+2. 요청URL과 매칭되는 컨트롤러를 HandlerMapping에서 검색
+3. HandlerAdapter에게 처리를 요청하면 Spring bean 컨트롤러에서 실행하고 결과를 반환
+4. 컨트롤러 실행 결과를 ModelAndView로 변환하여 다시 Dispatcher Servlet으로 반환
+5. 컨트롤러의 실행 결과를 보여줄 View를 ViewResolver에서 검색
+6. View가 응답을 만들고 JSP를 만듦
+7. 최종적으로 클라이언트(웹브라우저)에 결과를 반환
 
 ```xml
 <servlet>
@@ -22,22 +24,20 @@
 </servlet>
 ```
 
-## 프로젝트에서 어노테이션 사용하기
-
-### @Service
+## @Service
 
 - 각 프로젝트별 비지니스 로직을 처리하는 클래스에 붙인다.
 
-### @Controller
+## @Controller
 
 - 객체 생성 및 컨트롤러 역할
 
-#### @RequestMapping
+### @RequestMapping
 
 - 해당 URI를 처리하도록 주소를 매핑하기 위한 어노테이션
 - method속성을 명시하지 않으면 GET방식과 POST방식 모두를 처리한다.
 
-#### @GetMapping, @PostMapping
+### @GetMapping, @PostMapping
 
 - @GetMapping과 @PostMapping이 지원되지 않는 경우에는 @RequestMapping을 이용하여 다음과 같이 설정한다.
 
@@ -60,7 +60,9 @@ public ModelAndView submit(String name, String tel, int age) {
 }
 ```
 
-### @Repository
+## @Repository
+
+- DB작업 등 로그를 출력할 때 유리 (추후 정리 필)
 
 ## 리턴 타입
 
