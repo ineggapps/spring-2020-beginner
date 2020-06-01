@@ -124,8 +124,6 @@ public ModelAndView submit(String name, String tel, int age) {
 - req.setAttribute("항목명", 객체)와 동일한 효과를 낸다.
 - 그런데 @ModelAttribute가 메서드의 윗부분에 설정된 경우 @ModelAttribute는 @RequestMapping보다 먼저 실행된다. 이 경우 @REquestMapping이 적용되지 않는 별도의 메서드에서 모델에 추가될 객체를 생성한다.
 
-=== 이하 정리 필요
-
 ### Map
 
 - 요청 주소(RequestMapping으로 설정한 URL)가 곧 view의 주소가 된다.
