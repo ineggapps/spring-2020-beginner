@@ -21,7 +21,7 @@
 - [#03 - 의존관계 설정(DI)](https://github.com/ineggapps/spring-2020-beginner/blob/master/03-%EC%9D%98%EC%A1%B4%EA%B4%80%EA%B3%84%EC%84%A4%EC%A0%95.md)
 - [#04 - XML](https://github.com/ineggapps/spring-2020-beginner/blob/master/04-xml.md)
 - [#05 - 스프링의 Scope를 통한 객체 생성 옵션](https://github.com/ineggapps/spring-2020-beginner/blob/master/05-%EC%8A%A4%ED%94%84%EB%A7%81%EC%9D%98Scope.md)
-- [#06 - 룩업 메서드 인젝션](https://github.com/ineggapps/spring-2020-beginner/blob/master/06-lookup-method-injection.md)
+- [#06 - 룩업 메서드 인젝션](https://github.com/ineggapps/spring-2020-beginner/blob/master/06-%EB%A3%A9%EC%97%85%EB%A9%94%EC%84%9C%EB%93%9C%EC%9D%B8%EC%A0%9D%EC%85%98.md)
 - [#07 - 어노테이션](https://github.com/ineggapps/spring-2020-beginner/blob/master/07-%EC%96%B4%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98.md)
 - [#08 - MVC 프로젝트 만들기](https://github.com/ineggapps/spring-2020-beginner/blob/master/08-MVC%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 - [#09 - MVC프로젝트 사용하기](https://github.com/ineggapps/spring-2020-beginner/blob/master/09-MVC%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.md)
